@@ -132,4 +132,21 @@ body {
     color: #F4F4F4;
     font-size: 14px;
 }
+/* Start Responsive */
+@media screen and (max-width: 1200px) {
+    .footer .footer-left-said,
+    .footer .footer-right-said {
+        width: 100%;
+    }
+}
+@media screen and (max-width: 567px) {
+    .footer .footer-right-said {
+        flex-wrap: wrap;
+    }
+    .footer-right-said .footer-item {
+        width: 50%;
+        margin-bottom: 20px;
+    }
+}
+/* End Responsive */
 /* End Footer */
