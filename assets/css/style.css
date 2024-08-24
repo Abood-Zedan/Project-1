@@ -80,16 +80,16 @@ body {
     padding: 50px 0;
 }
 .footer .row {
-    gap: 100px;
+    gap: 20px;
 }
 .footer a {
     color: #fff;
 }
 .footer .footer-left-said {
-    width: 500px;
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
+    width: calc( (100% - 20px) / 2);
 }
 .footer .logo {
     display: flex;
@@ -116,7 +116,8 @@ body {
 .footer .footer-right-said {
     flex-grow: 1;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+    width: calc( (100% - 20px) / 2);
 }
 .footer-right-said .footer-item {
     display: flex;
@@ -138,15 +139,87 @@ body {
     .footer .footer-right-said {
         width: 100%;
     }
+    .footer .row {
+        gap: 40px;
+    }
+}
+@media screen and (max-width: 768px) {
+    .footer .footer-right-said {
+        justify-content: space-between;
+    }
 }
 @media screen and (max-width: 567px) {
     .footer .footer-right-said {
         flex-wrap: wrap;
+        gap: 20px;
     }
     .footer-right-said .footer-item {
-        width: 50%;
-        margin-bottom: 20px;
+        width: calc((100% - 20px) / 2);
+    }
+}
+@media screen and (max-width: 400px) {
+    .footer-right-said .footer-item {
+        width: 100%;
+        text-align: center;
+    }
+    .footer .footer-right-said nav a {
+        color: #F4F4F4;
+        font-size: 12px;
     }
 }
 /* End Responsive */
 /* End Footer */
+/* Start testimonials */
+.testimonials {
+    padding: 50px 0;
+    background-color: #fff;
+}
+.testimonials .row {
+    gap: 20px;
+    margin-top: 50px;
+}
+.testimonials h2 {
+    text-align: center;
+}
+.testimonials .testimonial {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    box-shadow: 0px 4px 9px 0px #afabab;
+    padding: 30px;
+    box-sizing: border-box;
+    width: calc((100% - 20px) / 2);
+}
+.testimonials .user {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.testimonials .user-info img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+.testimonials .user-data {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.testimonials .user-data span {
+    color: #969696;
+}
+.testimonials .rating {
+    display: flex;
+    gap: 5px;
+}
+.testimonials .rating img {
+    width: 20px;
+}
+/* Start Responsive */
+@media screen and (max-width: 768px) {
+    .testimonials .testimonial {
+        width: 100%;
+    }
+}
+/* End Responsive */
+/* End testimonials */
