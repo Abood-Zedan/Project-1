@@ -296,6 +296,8 @@ body {
     flex-direction: column;
     flex-wrap: wrap;
     gap: 30px;
+    padding: 0 50px;
+    box-sizing: border-box;
 }
 .courses .description span {
     color: var(--mainColor);
@@ -362,3 +364,89 @@ body {
 }
 /* End responsive */
 /* End Courses */
+/* Start About-courses */
+.about-courses {
+    padding: 50px 0;
+    background: linear-gradient(#545BE8,#272DB0);
+}
+.about-courses .row {
+    gap: 50px;
+}
+.about-courses .course-info ,
+.about-courses .course-description {
+    width: calc((100% - 50px) / 2);
+}
+.about-courses .course-info {
+    display: flex;
+    justify-content: center;
+}
+.about-courses .course-info img {
+    width: 75%;
+}
+.about-courses .course-description {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+.about-courses .course-description span {
+    color: #F0C932;
+    font-family: var(--subFont);
+}
+.about-courses .course-description h2 {
+    color: #fff;
+    font-size: 35px;
+}
+.about-courses .course-description p {
+    color: #DDDDDD;
+    width: 400px;
+}
+.about-courses .course-data {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+}
+.about-courses .course-description .row {
+    justify-content: flex-start;
+    gap: 100px;
+}
+.about-courses .course-data span:first-of-type {
+    font-weight: bold;
+    font-size: 18px;
+}
+.about-courses .course-data span:last-of-type {
+    color: #DDDDDD;
+}
+/* Start responsive */
+@media screen and (max-width: 992px) {
+    .about-courses .row {
+        gap: 20px;
+    }
+    .about-courses .course-info ,
+    .about-courses .course-description {
+    width: calc((100% - 20px) / 2);
+    }
+    .about-courses .course-description .row {
+        gap: 50px;
+    }
+    .about-courses .course-description p {
+        width: 100%;
+    }
+}
+@media screen and (max-width: 773px) {
+    .about-courses .course-info ,
+    .about-courses .course-description {
+        width: 100%;
+    }
+    .about-courses .course-info img {
+        width: 60%;
+    }
+    .about-courses .course-description {
+        width: 100%;
+        text-align: center;
+        align-items: center;
+    }
+}
+/* End responsive */
+/* End About-courses */
